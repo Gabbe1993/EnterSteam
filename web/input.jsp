@@ -5,7 +5,7 @@
 </head>
 <body>
 <form action="output.jsp" method="POST">
-    Search database for item: <input type="text" name="item">
+    Search database for name: <input type="text" name="name">
     <br/>
     <input type="submit" value="Submit" />
 </form>
