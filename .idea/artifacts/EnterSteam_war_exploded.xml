@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="EnterSteam" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.0.7.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
+        </element>
       </element>
     </root>
   </artifact>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_in.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -23,9 +23,8 @@
                 Search database for name: <input type="text" name="name">
                 <br/>
                 <input type="submit" value="Submit"/>
-            </form>
+            </form>-->
 
-            -->
             
         </form>
     </div>
