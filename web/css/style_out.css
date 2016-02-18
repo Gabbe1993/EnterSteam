@@ -1,0 +1,23 @@
+html, body {
+    font-family: "Oxygen"; 
+    font-weight: 300; 
+    margin: 0;
+    padding: 0;
+}
+.container {
+  max-width: 970px;
+}
+
+/* Header */
+.header {
+    height: 100%;
+    background: black;
+    color: ghostwhite;
+    text-align: center;
+}
+.header h3 {
+    margin-top: 20%;
+}
+.header h4 {
+    margin-top: 15%;
+}
