@@ -1,0 +1,89 @@
+html, body {
+    font-family: "Oxygen"; 
+    font-weight: 300; 
+    margin: 0;
+    padding: 0;
+}
+.container {
+  max-width: 970px;
+}
+
+/* Header */
+.header {
+    background: black;
+    height: 100%;
+    text-align: center;
+}
+.header h1{
+    margin-top: 230px;
+    color: whitesmoke;
+    font-size: 45px
+}
+.header form {
+    text-align: center;
+    margin-top: 200px;
+}
+#search {
+    border-style: none;
+	background: transparent;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    font-size: 20px;
+    width: 400px;
+    margin-right: 15px;
+}
+#search:hover {
+  border-color: #8DC100;
+}
+.form-control {
+	color: #555;
+}
+.form-control:focus {
+  border-color: #8DC100;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(141, 193, 0, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(141, 193, 0, .6);
+}
+
+/* Media */
+.header .btn {
+    margin-top: 3%;
+    color: #8DC100;
+    background: transparent;
+    border-radius: 2px;
+    border: 1px solid #8DC100;
+    padding: 8px 28px;
+}
+.header .btn:hover {
+	color: ghostwhite;
+    background: #8DC100;
+    border-color: #8DC100;
+}
+
+@media screen and (max-width: 767px) {
+    .header form {
+        width: 410px;
+        margin-left: 21%;
+    }
+    .header .btn {
+        margin-top: -13px;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    .header form {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header form {
+        margin-left: 7%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .header form {
+        margin-left: 0;
+    }
+}
