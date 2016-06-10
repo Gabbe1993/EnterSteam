@@ -12,10 +12,10 @@
 </head>
 <body>
     <h4>You searched for:</h4>
-    <%= request.getParameter("name")%>
-    <jsp:useBean id="nb" class="beans.SearchBean" />
-    <jsp:setProperty name="nb" property="name" value="<%= request.getParameter("name")%>" />
+    <%=  request.getParameter("artistName")%>
+    <jsp:useBean id="sb" class="beans.SearchBean" />
+    <jsp:setProperty name="sb" property="name" value="<%= request.getParameter("artistName")%>" />
     <h3>Result:</h3>
-    <jsp:getProperty name="nb" property="name"/>
+    <jsp:getProperty name="sb" property="name"/>
 </body>
 </html>

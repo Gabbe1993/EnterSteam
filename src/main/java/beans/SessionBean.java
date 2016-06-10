@@ -36,13 +36,13 @@ public class SessionBean implements Serializable{
     }
 
     public void insertArtist(String name) {
-        Log.info("SessionBean.insertArtist");
-        Log.info("name = [" + name + "]");
+        Log.info("SessionBean.insertArtist", this);
+        Log.info("name = [" + name + "]", this);
     }
 
     public List selectArtist(String name) {
-        Log.info("SessionBean.selectArtist");
-        Log.info("name = [" + name + "]");
+        Log.info("SessionBean.selectArtist", this);
+        Log.info("name = [" + name + "]", this);
 
         return new ArrayList();
     }

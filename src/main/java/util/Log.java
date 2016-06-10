@@ -20,4 +20,8 @@ public class Log {
     public static void fine(String msg) {
         logger.fine(msg);
     }
+
+    public static void info(String msg, Object category) {
+        info(category.getClass().getName() + ": " + msg);
+    }
 }

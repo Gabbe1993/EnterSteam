@@ -16,7 +16,7 @@
         <session>
             <ejb-name>SearchEJB</ejb-name>
             <ejb-class>beans.SearchBean</ejb-class>
-            <session-type>Stateless</session-type>
+            <session-type>Stateful</session-type>
             <transaction-type>Bean</transaction-type>
         </session>
 
