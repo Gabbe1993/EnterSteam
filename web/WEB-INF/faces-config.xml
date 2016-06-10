@@ -18,11 +18,19 @@
         </resource-bundle>
     </application>-->
     <managed-bean>
-        <managed-bean-name>searchBean</managed-bean-name>
+        <managed-bean-name>SearchEJB</managed-bean-name>
         <managed-bean-class>
             beans.SearchBean
         </managed-bean-class>
-        <managed-bean-scope>request</managed-bean-scope>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <managed-bean>
+        <managed-bean-name>SessionEJB</managed-bean-name>
+        <managed-bean-class>
+            beans.SessionBean
+        </managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
 
   <!--  <navigation-rule>

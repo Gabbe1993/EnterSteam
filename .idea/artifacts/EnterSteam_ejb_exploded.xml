@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="EnterSteam:ejb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/EnterSteam_ejb_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="EnterSteam/ejb/EJB" />
+      <element id="javaee-facet-classes" facet="EnterSteam/ejb/EJB" />
+    </root>
+  </artifact>
+</component>
