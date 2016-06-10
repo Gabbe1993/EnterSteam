@@ -2,8 +2,6 @@ package beans;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
-import org.hibernate.service.ServiceRegistryBuilder;
 import util.Log;
 
 import javax.ejb.Stateful;
@@ -20,7 +18,6 @@ import java.util.List;
 public class SessionBean implements Serializable{
 
     private SessionFactory sessionFactory;
-    private ServiceRegistry serviceRegistry;
 
     @Inject
     public SessionBean() {
@@ -28,14 +25,12 @@ public class SessionBean implements Serializable{
     }
 
     public SessionFactory createSessionFactory() {
-        Configuration configuration = new Configuration();
-        configuration.configure();
-
-        serviceRegistry = new ServiceRegistryBuilder().applySettings(
-                configuration.getProperties()). buildServiceRegistry();
-
-        // TODO: throws org.hibernate.service.classloading.spi.ClassLoadingException: Specified JDBC Driver com.mysql.jdbc.Driver could not be loaded
-        sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+        try{
+            sessionFactory = new Configuration().configure().buildSessionFactory();
+        }catch (Throwable ex) {
+            System.err.println("Failed to create sessionFactory object." + ex);
+            throw new ExceptionInInitializerError(ex);
+        }
 
         return sessionFactory;
     }
